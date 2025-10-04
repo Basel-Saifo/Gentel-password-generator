@@ -46,7 +46,7 @@ function generateEngine(length, ops) {
         uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         lowercase: 'abcdefghijklmnopqrstuvwxyz',
         numbers: '0123456789',
-        symbols: '!@#$%^&*()'
+        symbols: '!@#$%^&*()+-/[]{}=_,./\|'
     }
     if (length >= 6 && length <= 30) {
         switch (ops.length) {
@@ -102,4 +102,5 @@ generator.addEventListener('click', () => {
 
 resetter();
 passLengthListener();
+
 optionsListener();
