@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PASSWORD GENERATOR</h1>
+    <div class="container">
+        <div class="display-area">
+            <input type="text" name="display" id="display" class="display" value="" placeholder="PASSWORD" disabled>
+            <button class="copy"><i class="ri-file-copy-2-fill"></i></button>
+        </div>
+        <div class="options">
+            <div class="option-container option-length">
+                <label for="password-length" >Password Length: <span id="password-length-display"></span></label>
+                <input type="range" name="password-length" id="password-length" min="6" max="30" step="1">
+            </div>
+            <div class="option-container option-upper">
+                <input type="checkbox" name="uppercase" id="uppercase" class="option" value="uppercase">
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div class="option-container option-lower">
+                <input type="checkbox" name="lowercase" id="lowercase" class="option" value="lowercase">
+                <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div class="option-container option-number">
+                <input type="checkbox" name="numbers" id="numbers" class="option" value="numbers">
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="option-container option-symbols">
+                <input type="checkbox" name="symbols" id="symbols" class="option" value="symbols">
+                <label for="symbols">Include Symbols</label>
+            </div>
+        </div>
+        <div class="option-generate">
+            <button class="generate">GENERATE PASSWORD</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
